@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Media Streaming Service</title>
+</head>
+<body>
+    <h1>My Video Library</h1>
+    <ul>
+        {% for video in videos %}
+            <li><a href="/stream/{{ video }}">{{ video }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
